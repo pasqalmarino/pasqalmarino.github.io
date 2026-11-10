@@ -1,0 +1,138 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pasquale Marino</title>
+<meta name="description" content="Pasquale Marino, Berlin. Brand and communication strategist, founder of Mae.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,400;0,500;1,400;1,500&family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F6F6F4;--bg-2:#ECECE8;--ink:#141414;--ink-2:#55554F;--ink-3:#8C8C85;--rule:#DADAD4;--dot:#3A3A36;--tile:#E4E4DF;--sans:"Inter Tight",system-ui,sans-serif;--mono:"Space Grotesk",system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#111111;--bg-2:#1A1A19;--ink:#EDEDE9;--ink-2:#A9A9A2;--ink-3:#6F6F69;--rule:#2A2A28;--dot:#CFCFC8;--tile:#1E1E1C}}
+:root[data-theme="dark"]{--bg:#111111;--bg-2:#1A1A19;--ink:#EDEDE9;--ink-2:#A9A9A2;--ink-3:#6F6F69;--rule:#2A2A28;--dot:#CFCFC8;--tile:#1E1E1C}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased;transition:background .3s,color .3s}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 48px}
+.label{font-family:var(--mono);font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-3)}
+header{position:fixed;inset:0 0 auto;z-index:10;background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:blur(8px)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:76px}
+.brand{font-family:var(--mono);font-weight:500;font-size:13px;letter-spacing:.14em}
+nav{display:flex;gap:32px;align-items:center}
+nav a{font-family:var(--mono);font-size:14px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-2);transition:color .2s}
+nav a:hover{color:var(--ink)}
+.toggle{width:46px;height:24px;border-radius:20px;border:1px solid var(--rule);background:var(--bg-2);position:relative;cursor:pointer}
+.toggle::after{content:"";position:absolute;top:2px;left:2px;width:18px;height:18px;border-radius:50%;background:var(--ink);transition:transform .25s}
+:root[data-theme="dark"] .toggle::after{transform:translateX(22px)}
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden}
+#sky{position:absolute;inset:0;width:100%;height:100%}
+.hero-in{position:relative;max-width:560px;margin:0 auto;padding:120px 0 60px}
+.hero h1{font-weight:500;font-size:clamp(30px,4vw,40px);line-height:1.12;letter-spacing:-.02em;margin:28px 0 0}
+.hero h1 em{display:block;font-weight:400;color:var(--ink-2)}
+.hero p{margin-top:40px;font-size:15px;color:var(--ink-2)}
+.hero p a{border-bottom:1px solid var(--rule)}
+.hero .bar{margin-top:44px;border-top:1px solid var(--rule);padding-top:22px;text-align:right}
+section{padding:110px 0}
+.head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:40px}
+.ph{position:relative;background:var(--tile);border-radius:3px;overflow:hidden}
+.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.feat{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.card .ph{aspect-ratio:3/2;transition:transform .5s}
+.card:hover .ph{transform:scale(1.012)}
+.card .label{display:block;margin:22px 0 10px;font-size:11px}
+.card h3{font-weight:500;font-size:17px;letter-spacing:-.01em}
+.card p{margin-top:8px;font-size:14px;color:var(--ink-2);max-width:36ch}
+.svc{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--rule)}
+.svc div{padding:34px 28px 0 0}
+.svc div+div{padding-left:28px;border-left:1px solid var(--rule)}
+.svc h3{font-weight:500;font-size:22px;letter-spacing:-.015em;margin:14px 0 12px}
+.svc p{font-size:14px;color:var(--ink-2);max-width:32ch}
+.about{display:grid;grid-template-columns:1fr 1.4fr;gap:60px;align-items:center}
+.about h2{font-weight:500;font-size:clamp(24px,3vw,32px);line-height:1.2;letter-spacing:-.02em;max-width:22ch}
+.about h2 em{font-weight:400;color:var(--ink-2)}
+.press{margin-top:28px;font-size:13px;color:var(--ink-3)}
+.connect h2{font-weight:500;font-size:clamp(32px,5vw,52px);letter-spacing:-.03em;line-height:1.05;margin:24px 0 36px}
+.connect .links{display:flex;gap:32px;font-size:15px}
+.connect .links a{color:var(--ink-2)}
+.connect .links a:first-child{color:var(--ink);border-bottom:1px solid var(--ink)}
+footer{border-top:1px solid var(--rule);padding:56px 0 40px;margin-top:40px}
+.foot{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;font-size:13px;color:var(--ink-2)}
+.foot b{display:block;font-family:var(--mono);font-size:12px;letter-spacing:.14em;color:var(--ink);margin-bottom:18px}
+.foot .label{display:block;margin-bottom:18px;font-size:11px}
+.foot a{display:block;margin-bottom:12px}
+.foot a:hover{color:var(--ink)}
+.base{display:flex;justify-content:space-between;margin-top:56px;padding-top:24px;border-top:1px solid var(--rule)}
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .8s,transform .8s}
+.reveal.on{opacity:1;transform:none}
+.story{display:grid;grid-template-columns:1.25fr 1fr;gap:56px;align-items:center}
+.story .ph{background:#000}
+.story h2{font-weight:500;font-size:clamp(28px,3.6vw,44px);line-height:1.08;letter-spacing:-.025em;margin:20px 0 22px}
+.story h2 em{font-weight:400;color:var(--ink-2)}
+.story p{font-size:15px;color:var(--ink-2);max-width:40ch}
+.nums{display:flex;gap:40px;margin:34px 0;padding:22px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.nums b{display:block;font-weight:500;font-size:30px;letter-spacing:-.02em}
+.nums span{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3)}
+.go{font-family:var(--mono);font-size:13px;letter-spacing:.16em;text-transform:uppercase;border-bottom:1px solid var(--ink);padding-bottom:3px}
+.portrait{aspect-ratio:4/5;border-radius:3px;overflow:hidden;background:#000}
+.portrait img{width:100%;height:100%;object-fit:cover;display:block;filter:grayscale(.15)}
+@media (max-width:900px){.wrap{padding:0 16px}nav a{display:none}.feat,.svc,.story{grid-template-columns:1fr}.feat{gap:40px}.story{gap:32px}.svc div,.svc div+div{padding:28px 0;border-left:0;border-bottom:1px solid var(--rule)}.about{grid-template-columns:1fr;gap:36px}.foot{grid-template-columns:1fr 1fr}.hero-in{padding:120px 16px 60px}.nums{gap:28px}}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}}
+</style></head><body>
+<header><div class="wrap"><a class="brand" href="#top">PASQUALE MARINO</a><nav><a href="#work">Work</a><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a><button class="toggle" id="toggle" aria-label="Toggle dark mode"></button></nav></div></header>
+<main id="top">
+<section class="hero"><canvas id="sky" aria-hidden="true"></canvas><div class="hero-in">
+<div class="label">Berlin</div>
+<h1>Brand &amp; Communication Strategist.<em>Founder of Mae.</em></h1>
+<p>I built <a href="https://www.instagram.com/mae.community/" target="_blank" rel="noopener">@mae.community</a> into an audience of 107k. Now I help other brands find what they stand for and say it.</p>
+<div class="bar"><a class="label" href="#work">Scroll ↓</a></div></div></section>
+<section id="work"><div class="wrap">
+<div class="head reveal"><span class="label">Success story</span><span class="label">Mae · 2022–present</span></div>
+<div class="story">
+<a class="ph reveal" href="https://www.instagram.com/mae.community/" target="_blank" rel="noopener"><img src="mae-instagram.jpg" alt="Instagram posts of @mae.community"></a>
+<div class="reveal"><span class="label">Instagram</span>
+<h2>@mae.community<em><br>Exploring the questions shaping our lives.</em></h2>
+<p>A cultural brand built from zero: positioning, voice, editorial line and community, around one idea. Artists and experts present, everyone else answers.</p>
+<div class="nums"><div><b>107k</b><span>Followers</span></div><div><b>1,217</b><span>Posts</span></div><div><b>2022</b><span>Since</span></div></div>
+<a class="go" href="https://www.instagram.com/mae.community/" target="_blank" rel="noopener">See the account →</a></div>
+</div></div></section>
+<section style="padding-top:0"><div class="wrap"><div class="feat">
+<a class="card reveal" href="https://www.mae.community" target="_blank" rel="noopener"><div class="ph"><img src="mae-website.jpg" alt="mae.community homepage" style="object-position:left center"></div><span class="label">Mae · Brand</span><h3>One name, one voice, every touchpoint</h3><p>Website, app, membership and press speak the same language.</p></a>
+<a class="card reveal" href="https://www.mae.community/app" target="_blank" rel="noopener"><div class="ph" style="background:#0b0b0b"><img src="mae-app.jpg" alt="Mae app screens" style="object-fit:contain"></div><span class="label">Mae app · Communication</span><h3>From followers to members</h3><p>The message that moves people from scrolling to joining.</p></a>
+<div class="card reveal"><div class="ph"><img src="mae-monopol.jpg" alt="Monopol article about Mae" style="transform:scale(1.18)"></div><span class="label">Press · Talks</span><h3>"Kunst-Start-up Mae: Du auch hier?"</h3><p>Monopol, Berliner Morgenpost, MWC Barcelona, CultTech Summit.</p></div>
+</div></div></section>
+<section id="services"><div class="wrap"><div class="head reveal"><span class="label">Services</span></div>
+<div class="svc reveal"><div><span class="label">01</span><h3>Branding</h3><p>Positioning, naming, voice. What you stand for, in one sentence people repeat.</p></div><div><span class="label">02</span><h3>Communication strategy</h3><p>Messaging, social and editorial lines, community. Who hears what, where, and why they answer.</p></div></div>
+</div></section>
+<section id="about"><div class="wrap about">
+<div class="portrait reveal"><img src="pasquale%20profile.jpg" alt="Portrait of Pasquale Marino"></div>
+<div class="reveal"><span class="label">About</span>
+<h2 style="margin-top:22px">Brands grow when people talk about them, not just hear from them. <em>That is what I built Mae on.</em></h2>
+<p style="margin-top:24px;font-size:15px;color:var(--ink-2);max-width:46ch">One clear idea, one voice and one question at the heart of everything. It took Mae from a name to 107k people on Instagram, an app and a members' community. I bring the same approach to brands that want an audience, not just reach.</p>
+<p class="press" style="margin-top:40px">Talks &amp; press: MWC Barcelona, CultTech Summit, Monopol, Berliner Morgenpost, WAS MIT KUNST.</p></div>
+</div></section>
+<section id="contact" class="connect"><div class="wrap reveal"><span class="label">Connect</span><h2>Tell me what your brand should say.</h2>
+<div class="links"><a href="mailto:pasquale@pasqalmarino.com">Email</a><a href="https://www.linkedin.com/in/pasquale-marino-1990ba116/" target="_blank" rel="noopener">LinkedIn</a><a href="https://www.instagram.com/mae.community/" target="_blank" rel="noopener">Instagram</a></div></div>
+<footer><div class="wrap"><div class="foot">
+<div><b>PASQUALE MARINO</b>Brand &amp; Communication Strategist.<br>Berlin, Germany.</div>
+<div><span class="label">Navigation</span><a href="#work">Work</a><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+<div><span class="label">Connect</span><a href="mailto:pasquale@pasqalmarino.com">Email</a><a href="https://www.linkedin.com/in/pasquale-marino-1990ba116/" target="_blank" rel="noopener">LinkedIn</a><a href="https://www.mae.community" target="_blank" rel="noopener">mae.community</a></div>
+</div><div class="base label"><span>© 2026 Pasquale Marino</span><a href="#top">Back to top</a></div></div></footer>
+</section></main>
+<script>
+(()=>{const root=document.documentElement,t=document.getElementById('toggle');
+try{const s=localStorage.getItem('theme');if(s)root.dataset.theme=s}catch(e){}
+const isDark=()=>root.dataset.theme?root.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;
+t.onclick=()=>{const n=isDark()?'light':'dark';root.dataset.theme=n;try{localStorage.setItem('theme',n)}catch(e){}};
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+const c=document.getElementById('sky'),x=c.getContext('2d');let W,H,P=[],mx=-999,my=-999;
+const still=matchMedia('(prefers-reduced-motion: reduce)').matches;
+function size(){const d=devicePixelRatio||1;W=c.offsetWidth;H=c.offsetHeight;c.width=W*d;c.height=H*d;x.setTransform(d,0,0,d,0,0);
+const n=Math.round(W*H/16000);P=Array.from({length:n},()=>({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.15,vy:(Math.random()-.5)*.15,r:Math.random()<.15?2.6:1+Math.random()}))}
+function draw(){x.clearRect(0,0,W,H);const col=getComputedStyle(root).getPropertyValue('--dot').trim();x.fillStyle=col;x.strokeStyle=col;
+for(const p of P){if(!still){p.x+=p.vx;p.y+=p.vy;if(p.x<0||p.x>W)p.vx*=-1;if(p.y<0||p.y>H)p.vy*=-1}x.globalAlpha=.55;x.beginPath();x.arc(p.x,p.y,p.r,0,7);x.fill()}
+for(let i=0;i<P.length;i++)for(let j=i+1;j<P.length;j++){const a=P[i],b=P[j],d=Math.hypot(a.x-b.x,a.y-b.y);const near=Math.hypot(a.x-mx,a.y-my)<160;if(d<(near?150:85)){x.globalAlpha=(near?.35:.15)*(1-d/150);x.lineWidth=.6;x.beginPath();x.moveTo(a.x,a.y);x.lineTo(b.x,b.y);x.stroke()}}
+x.globalAlpha=1;if(!still)requestAnimationFrame(draw)}
+c.parentElement.addEventListener('mousemove',e=>{const r=c.getBoundingClientRect();mx=e.clientX-r.left;my=e.clientY-r.top});
+addEventListener('resize',size);size();draw();if(still)addEventListener('resize',draw)})();
+</script>
+</body></html>
